@@ -15,9 +15,11 @@ def cosine_similarity(vector1: list[float], vector2: list[float]) -> float:
 
     return vector_dot_product(vector1, vector2) / (vector_magnitude(vector1) * vector_magnitude(vector2))
 
+
 def main():
     vector_a = [1, 2, 3]
     vector_b = [4, 5, 6]
     print(f'cosine_similarity({vector_a}, {vector_b}) = {cosine_similarity(vector_a, vector_b)}')
+
 
 main()
